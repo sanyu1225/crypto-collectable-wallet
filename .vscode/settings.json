@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 預設 format 使用 prettier
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"]
+}
