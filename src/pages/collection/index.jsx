@@ -1,9 +1,24 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
 import Card from '@/components/Card';
-import { CollectionTitle, ButtonWrap, Button } from './style';
 import { fetchApi } from '@/utils/common';
+
+const CollectionTitle = styled(Typography)`
+  text-align: center;
+`;
+
+const ButtonWrap = styled('div')`
+  position: fixed;
+  bottom: 10px;
+  width: 95%;
+`;
+
+const MuiButton = styled(Button)`
+  width: 100%;
+`;
 
 export default function Collection() {
   const { query, push } = useRouter();
@@ -55,9 +70,9 @@ export default function Collection() {
             </Typography>
           </Card>
           <ButtonWrap>
-            <Button variant="contained" onClick={backToHome}>
+            <MuiButton variant="contained" onClick={backToHome}>
               back
-            </Button>
+            </MuiButton>
           </ButtonWrap>
         </>
       )}
