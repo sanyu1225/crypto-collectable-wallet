@@ -74,7 +74,6 @@ export const WalletProvider = ({ children }) => {
       provider,
       network,
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [account, web3Modal, chainId, provider, network]
   );
 

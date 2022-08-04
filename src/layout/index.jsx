@@ -4,7 +4,6 @@ import Header from './Header';
 
 const ChildrenWrap = styled('div')`
   margin-top: 55px;
-  background-color: red;
   height: calc(100vh - 55px);
   min-height: 100vh;
   background-repeat: no-repeat;
