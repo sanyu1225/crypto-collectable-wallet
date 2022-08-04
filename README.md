@@ -7,6 +7,13 @@
 - context hook (switchNetwork, connectWallet, disableConnect Wallet)
 - Component(Card, CardList, Progress)
 
+### Rinkeby Faucet
+
+- [link 1 ](https://rinkebyfaucet.com/) (0.1 ETH)
+- [link 2](https://faucets.chain.link/rinkeby) (20 test LINK, 0.1 ETH)
+- [link 3](https://faucet.paradigm.xyz/) (Faucet drips 0.5 ETH, 0.5 wETH, and 5 NFTs (ERC721).)
+-
+
 ### Install
 
 ```

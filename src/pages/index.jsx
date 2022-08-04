@@ -21,7 +21,7 @@ export default function Home() {
 
   const getCollection = async () => {
     try {
-      if (!account) return;
+      if (!account || chainId !== 4) return;
       setLoading(true);
       const response = await fetchApi(`/api/assets?owner=${account}&offset=0`);
       const allData = new Set([...data, ...response.assets]);
@@ -65,9 +65,9 @@ export default function Home() {
   }, [pageNum]);
 
   useEffect(() => {
-    if (!account) return;
+    if (!account || chainId !== 4) return;
     getCollection();
-  }, [account]);
+  }, [account, chainId]);
 
   return (
     <>
@@ -83,9 +83,7 @@ export default function Home() {
             Please Switch to Rinkeby TestNet! <Button onClick={switchNetwork}>switch</Button>
           </Alert>
         ) : null}
-        <div>
-          <CardList data={data || []} setLastElement={setLastElement} />
-        </div>
+        <CardList data={data || []} setLastElement={setLastElement} />
 
         {loading && <Progress />}
       </Layout>
