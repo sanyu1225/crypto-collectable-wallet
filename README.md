@@ -4,6 +4,8 @@
 
 ## The total number of pages will not be returned because the opensea api passes the owner parameter , so fixed total number of pages Simulates infinite scrolling
 
+#### If you have a small number of nfts in your wallet, you can adjust the screen to below 864px to see the effect of infinite scrolling
+
 - context hook (switchNetwork, connectWallet, disableConnect Wallet)
 - Component(Card, CardList, Progress)
 
